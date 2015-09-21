@@ -235,8 +235,9 @@ In order to model text, a machine representation of world knowledge is built and
         Given a set of D documents and a set of T terms, each document could be modeled as a vector V in a T-dimensional space $R^{t}$. 
 The jth coordinate of V is a number that measures the association of the jth term with respect to the given document. Vj is set at 0 if document does not contain the term and Vj is set at 1 as long as the Jth term occurs in the document, or let Vj be the term frequency (number of occurrences of the term Tj in the document) or the relative term frequency (term frequency versus total number of occurrences of all terms in the document).
 Metrics such as the cosine measure have been proposed to measure document similarity. If v1 and v2 are two document vectors, the cosine similarity is    
- \begin{equation}Sim(v_{1},v_{2}) = \frac{v_{1}.v_{2}}{|v_{1}||v_{2}|} \end{equation}
-Where$ v_{1}.v_{2}$= the vector product and $|v|^{2} = v.v.$
+\begin{equation}
+Sim(v_{1},v_{2}) = \frac{v_{1}.v_{2}}{|v_{1}||v_{2}|} 
+\end{equation} where $ v_{1}.v_{2}$= the vector product and $|v|^{2} = v.v.$
 \newline The similarity metrics for documents may be used to construct similarity -based indices on such documents. Text-based queries are represented as vectors and their closest neighbors are selected from the document collection.
 
 For any document database with D documents and T terms, we have that D and T is usually large leading to inefficient computations. Also, the sparsity of vectors made it difficult to detect and exploit relationships among terms. To overcome these problems, a latent semantic indexing method was developed that effectively reduced the size of a frequency table for analysis.
