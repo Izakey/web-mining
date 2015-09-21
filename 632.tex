@@ -125,9 +125,9 @@ In data mining terms, classification may be defined as finding models that aggre
 
 Despite the efforts of the above authors, the aforementioned approaches still present the following shortcomings;
 \begin{itemize}
-\item 1. Features of predecessor pages should not be considered as shown by Chakrabarti \textit{et al}(1998a).
-\item 2. The entire text of the predecessor page may not be relevant.
-\item 3. Not all pages have relevant meta-information.
+\item Features of predecessor pages should not be considered as shown by Chakrabarti \textit{et al}(1998a).
+\item The entire text of the predecessor page may not be relevant.
+\item Not all pages have relevant meta-information.
 \end{itemize}
 Later, Fürnkranz (2001) introduced hyperlinks ensembles for classification of web pages to resolve the above problems. This he achieved by training  a classifier that classifies hyperlinks according to the class of pages they point to  based on the words that occur in their link neighbourhood (base case, anchor text). Hence each page is assigned different predictions for class membership which are combined to a final prediction by voting procedures.
 
@@ -167,19 +167,16 @@ The data from these three collection sites may identify data abstractions such a
 There are three main tasks for performing web usage mining namely preprocessing, pattern discovery and pattern analysis.
 \subsubsection{ Preprocessing}This consists of converting the usage, content and structural information contained in the available data sources into the data abstractions necessary for pattern discovery.
 \subsection*{\small{3.2.3.1. Usage preprocessing.}}  This is arguably the most difficult task in the web usage mining process due to the incompleteness of the available data. 
-Some of the typically encountered problems are.
-
-•	Single IP address/multiple server sessions. Internet service providers (ISPs) typically have a pool of proxy servers that users access the web through. A single proxy server may have several users accessing the website, potentially over the same time period.
- 
-•	Multiple IP address/ single server session:
+Some of the typically encountered problems are;
+\begin{itemize}
+\item Single IP address/multiple server sessions. Internet service providers (ISPs) typically have a pool of proxy servers that users access the web through. A single proxy server may have several users accessing the website, potentially over the same time period.
+\item Multiple IP address/ single server session:
 Some ISPs randomly assign each request from a user to one of several IP addresses. In this case, a single server session can have multiple IP addresses.
-
-•	Multiple IP address/Single user:
+\item Multiple IP address/Single user:
 A user that accesses the web from different machines would have different IP addresses from session to session making repeat visits from the same user impossible to track.
-
-•	Multiple Agent/ Single user:
+\item Multiple Agent/ Single user:
 Again, a user that uses more than one browser even on the same machine would appear as multiple users. Assuming that each user has been identified, (using cookies,           logins etc), a click stream for each user is divided into sessions. This data is then cleaned, condensed and transformed in order to retrieve and analyze significant and useful information. 
-
+\end{itemize}
 \subsection*{\small{3.2.3.2 Content preprocessing.}}
 Content preprocessing consists of converting the text, image, scripts and other files such as multimedia into forms that are useful for the web usage mining process. This consists of the following contents mining such as classification or clustering. While applying data mining to the content of website is an interesting area of web research in its own right, in the context of web usage mining, the content of a site can be used to filter the input to or output from the pattern discovery algorithms. For example, results of a classification algorithm could be used to limit the discovered patterns to those containing page views about a certain class of products. Also, page views can be classified according to their intended use. Page views can be intended to convey information to the user, gather information from the user, allow navigation, or a combination of the above. 
 
