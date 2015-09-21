@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.8.29)  21 SEP 2015 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.8.29)  21 SEP 2015 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,13 +466,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
 
-Overfull \hbox (8.70894pt too wide) in paragraph at lines 33--34
-\T1/cmr/bx/it/9 project(Wikipedia, 2010). This gi-gan-tic in-for-ma-tion re-sou
-rce is non-administered,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
@@ -622,7 +616,7 @@ sfrm0900.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm100
 are/texlive/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on 632.pdf (17 pages, 357332 bytes).
+Output written on 632.pdf (17 pages, 350639 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
