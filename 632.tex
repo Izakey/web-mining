@@ -124,10 +124,11 @@ In data mining terms, classification may be defined as finding models that aggre
  Other authors explicitly encode the relational structure of the WWW in first-order logic. Craven \textit{et al} (1998) used a variant of Foil Algorithm (Quinlan, 1990) to learn classification schemes that incorporate features from neighbouring pages. Slattery and Mitchell (2000) improved the Foil algorithm by integrating it with HITS while Craven and Slattery (2001) combined Foil with a Naïve Bayes classifier to obtain better results.
 
 Despite the efforts of the above authors, the aforementioned approaches still present the following shortcomings;
-\newline 1.Features of predecessor pages should not be considered as shown by Chakrabarti \textit{et al}(1998a).
-\newline 2.The entire text of the predecessor page may not be relevant.
-\newline 3.Not all pages have relevant meta-information.
-
+\begin{itemize}
+\item 1. Features of predecessor pages should not be considered as shown by Chakrabarti \textit{et al}(1998a).
+\item 2. The entire text of the predecessor page may not be relevant.
+\item 3. Not all pages have relevant meta-information.
+\end{itemize}
 Later, Fürnkranz (2001) introduced hyperlinks ensembles for classification of web pages to resolve the above problems. This he achieved by training  a classifier that classifies hyperlinks according to the class of pages they point to  based on the words that occur in their link neighbourhood (base case, anchor text). Hence each page is assigned different predictions for class membership which are combined to a final prediction by voting procedures.
 
 Hyperlink ensembles outperformed a conventional full-text classification in the WebKB domain as shown by Craven \textit{et al} (2000). Later, different voting schemes were compared. Features such as headings preceding the current paragraph and anchor texts were investigated and turned out to be important.
